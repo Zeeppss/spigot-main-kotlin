@@ -1,0 +1,7 @@
+name: spigot-main-kotlin
+main: varaday.smk.Main
+author: Varaday
+version: 1.0
+commands:
+  testcmd:
+    description: ExampleCMD
