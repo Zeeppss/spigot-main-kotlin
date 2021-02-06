@@ -17,11 +17,12 @@ import java.time.Instant
 import java.util.logging.Logger
 
 public class Main() : JavaPlugin() , Listener, CommandExecutor {
+    
     // init is called as soon as Main is loaded!
     init {
         print("This got called before everything else!")
     }
-    // There is essentially no static in Kotlin, this is a list of vars(Read write objects) or vals(Read only objs) !
+    // There is essentially no static in Kotlin, this is a list of vars(Read write objects) or vals(Read only objs)!
     companion object{
         public val logger : Logger = Bukkit.getLogger();
     }
@@ -49,7 +50,7 @@ public class Main() : JavaPlugin() , Listener, CommandExecutor {
             //there is no switch in kotlin!!!
             when(command?.name){
                 "testcmd" -> {
-                    p.sendMessage("Hello from kotlin " + p.name + "!" )
+                    p.sendMessage("Hello from kotlin " + p.name + "!")
                     p.sendMessage("Have a cake!")
                     p.inventory.addItem(ItemStack(Material.CAKE_BLOCK))
                     return true
