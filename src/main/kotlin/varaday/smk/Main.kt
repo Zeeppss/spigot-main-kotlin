@@ -22,10 +22,12 @@ public class Main() : JavaPlugin() , Listener, CommandExecutor {
     init {
         print("This got called before everything else!")
     }
+    
     // There is essentially no static in Kotlin, this is a list of vars(Read write objects) or vals(Read only objs)!
     companion object{
         public val logger : Logger = Bukkit.getLogger();
     }
+    
     // There is no need for the @Override annotation
     override fun onEnable() {
         logger.info { "Example plugin started!" }
