@@ -45,9 +45,9 @@ public class Main() : JavaPlugin() , Listener, CommandExecutor {
 
     override fun onCommand(sender: CommandSender?, command: Command?, label: String?, args: Array<out String>?): Boolean {
         if (sender is Player){
-            //Kotlin casts automatically using smart-casts!
+            // Kotlin casts automatically using smart-casts!
             var p : Player = sender;
-            //there is no switch in kotlin!!!
+            // there is no switch in kotlin!!!
             when(command?.name){
                 "testcmd" -> {
                     p.sendMessage("Hello from kotlin " + p.name + "!")
